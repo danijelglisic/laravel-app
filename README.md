@@ -31,3 +31,10 @@ http-server -p 3000
 Your frontend application should now be running at http://localhost:3000.
 
 Now, you have both the Laravel and frontend applications up and running on your local machine.
+
+### Login Details
+
+For default admin user that is created with backend application credentials are:
+
+email: admin@test.app
+password: Admin@2023
