@@ -19,6 +19,6 @@ class AdminMiddleware
             return $next($request);
         }
     
-        abort(403, 'Unaothorized.');
+        abort(403, 'Unauthorized.');
     }
 }

@@ -31,7 +31,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
 
 Route::middleware(['auth:sanctum', 'admin'])->group(function () {
     Route::post('/add-random-user', AddRandomUserController::class);
-    Route::apiResource('/users', UserController::class);
+    Route::apiResource('/users', UserController::class)->only(['index', 'update', 'destroy']);
 });
 
 Route::post('/register', [RegisterController::class, 'store']);
